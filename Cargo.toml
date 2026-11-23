@@ -1,0 +1,13 @@
+[package]
+name = "d3"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "decoder"
+path = "src/main.rs"
+
+[dependencies]
+npusvc-sdk = { git = "https://github.com/tantal-os/npusvc-sdk.git", rev = "c0a1e5803527a549aef408e68c3ed288b930aed6" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
